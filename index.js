@@ -32,6 +32,19 @@ class GaryBot {
     }
   }
 
+  async getRandomJoke() {
+    try {
+      const response = await axios.get(`${this.baseUrl}/joke`, {
+        headers: {
+          api_key: this.apiKey
+        }
+      });
+      return response.data.joke;
+    } catch (error) {
+      this.handleError(error);
+    }
+  }
+
   handleError(error) {
     if (error.response) {
       // Server responded with a status other than 200 range
