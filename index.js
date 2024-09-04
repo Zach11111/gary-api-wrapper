@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-class GaryBot {
+class GaryAPI {
   constructor(apiKey) {
     this.apiKey = apiKey;
     this.baseUrl = 'https://garybot.dev/api';
