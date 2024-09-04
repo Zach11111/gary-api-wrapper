@@ -12,6 +12,11 @@ async function demo() {
     console.log('Fetching a random quote...');
     const quote = await bot.getRandomQuote();
     console.log('Random Quote:', quote);
+
+
+    console.log('Fetching a random joke...');
+    const joke = await bot.getRandomJoke();
+    console.log('Random Joke:', joke);
   } catch (error) {
     console.error('An error occurred:', error.message);
   }
