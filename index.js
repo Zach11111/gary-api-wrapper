@@ -63,5 +63,5 @@ class GaryAPI {
   }
 }
 
-module.exports = GaryBot;
+module.exports = GaryAPI;
  
