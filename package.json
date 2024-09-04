@@ -1,0 +1,19 @@
+{
+  "name": "gary-bot-wrapper",
+  "version": "1.0.0",
+  "description": "a wrapper for the gary api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zach11111/gary-api-wrapper.git"
+  },
+  "author": "Zach.O",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Zach11111/gary-api-wrapper/issues"
+  },
+  "homepage": "https://github.com/Zach11111/gary-api-wrapper#readme"
+}
