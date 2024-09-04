@@ -1,10 +1,11 @@
 {
   "name": "gary-bot-wrapper",
   "version": "1.0.0",
-  "description": "a wrapper for the gary api",
+  "description": "A wrapper for the Gary API",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node demo.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Zach11111/gary-api-wrapper/issues"
   },
-  "homepage": "https://github.com/Zach11111/gary-api-wrapper#readme"
+  "homepage": "https://github.com/Zach11111/gary-api-wrapper#readme",
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
 }
