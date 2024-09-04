@@ -1,4 +1,4 @@
-const GaryBot = require('gary-bot-wrapper');
+const GaryAPI = require('gary-bot-wrapper');
 
 const apiKey = 'your-api-key';
 const bot = new GaryBot(apiKey);
