@@ -1,6 +1,6 @@
 {
   "name": "gary-api-wrapper",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A wrapper for the Gary API",
   "main": "index.js",
   "type": "commonjs",
