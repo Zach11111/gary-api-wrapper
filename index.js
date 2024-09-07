@@ -1,11 +1,23 @@
 const axios = require('axios');
 
+/**
+ * GaryAPI class to interact with the Gary Bot API.
+ */
 class GaryAPI {
+  /**
+   * Constructs a new instance of GaryAPI.
+   * @param {string} apiKey - The API key used for authentication.
+   */
   constructor(apiKey) {
     this.apiKey = apiKey;
     this.baseUrl = 'https://garybot.dev/api';
   }
 
+  /**
+   * Fetches a random Gary image URL from the API.
+   * @returns {Promise<string>} - A promise that resolves to the URL of the random Gary image.
+   * @throws {Error} - Throws an error if the request fails.
+   */
   async getRandomGary() {
     try {
       const response = await axios.get(`${this.baseUrl}/gary`, {
@@ -19,6 +31,11 @@ class GaryAPI {
     }
   }
 
+  /**
+   * Fetches a random quote from the API.
+   * @returns {Promise<string>} - A promise that resolves to the random quote.
+   * @throws {Error} - Throws an error if the request fails.
+   */
   async getRandomQuote() {
     try {
       const response = await axios.get(`${this.baseUrl}/quote`, {
@@ -32,6 +49,11 @@ class GaryAPI {
     }
   }
 
+  /**
+   * Fetches a random joke from the API.
+   * @returns {Promise<string>} - A promise that resolves to the random joke.
+   * @throws {Error} - Throws an error if the request fails.
+   */
   async getRandomJoke() {
     try {
       const response = await axios.get(`${this.baseUrl}/joke`, {
@@ -45,6 +67,11 @@ class GaryAPI {
     }
   }
 
+  /**
+   * Handles API errors by logging the appropriate error messages.
+   * @param {Error} error - The error object thrown by the request.
+   * @throws {Error} - Rethrows the error after logging it.
+   */
   handleError(error) {
     if (error.response) {
       // Server responded with a status other than 200 range
@@ -64,4 +91,3 @@ class GaryAPI {
 }
 
 module.exports = GaryAPI;
- 
