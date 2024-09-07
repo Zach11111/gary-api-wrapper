@@ -1,7 +1,7 @@
 const GaryAPI = require('gary-bot-wrapper');
 
 const apiKey = 'your-api-key';
-const bot = new GaryBot(apiKey);
+const bot = new GaryAPI(apiKey);
 
 async function demo() {
   try {
